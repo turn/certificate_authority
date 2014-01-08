@@ -224,7 +224,7 @@ module CertificateAuthority
         res =  self.uris.map {|u| "URI:#{u}" }
         res += self.dns_names.map {|d| "DNS:#{d}" }
         res += self.ips.map {|i| "IP:#{i}" }
-        res += self.emails.map {|i| "EMAIL:#{i}" }
+        res += self.emails.map {|i| "email:#{i}" }
 
         return res.join(',')
       end
